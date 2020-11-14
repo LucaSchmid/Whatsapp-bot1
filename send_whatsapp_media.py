@@ -7,8 +7,9 @@ from decouple import config
 # Your Account Sid and Auth Token from twilio.com/console
 # and set the environment variables. See http://twil.io/secure
 
-account_sid = config('TWILIO_ACCOUNT_SID') 
-auth_token =  config('AUTH_TOKEN') 
+account_sid =  config('TWILIO_ACCOUNT_SID') 
+auth_token =   config('AUTH_TOKEN') 
+                
 client = Client(account_sid, auth_token)
 
 message = client.messages \
